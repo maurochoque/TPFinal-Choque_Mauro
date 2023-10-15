@@ -1,9 +1,10 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
 
 public class MovimientoCuadrado : MonoBehaviour
 {
-    
     public float velocidad = 25.0f; // Velocidad de movimiento
     public float margen = 0.5f;   // Margen de seguridad para que el obj
     void Update()
