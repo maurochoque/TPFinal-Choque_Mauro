@@ -28,14 +28,21 @@ public class movimientoJugador : MonoBehaviour
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool enSuelo;//tendra la informacion sobre si estamos en el suelo
     private bool salto = false;//variable para poder saltar
+
+    [Header("Animacion")]
+    private Animator animator;
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator=GetComponent<Animator>();
     }
 
     void Update()
     {
         movimientoHorizontal = Input.GetAxisRaw("Horizontal") * velocidadMovimiento;
+
+        animator.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
+
         //condicional si apretamos el boton (predefinido en unity Jump = barra espaciadora) barra espaciadora, cambia el valor de salto
         if (Input.GetButtonDown("Jump"))
         {
@@ -47,6 +54,9 @@ public class movimientoJugador : MonoBehaviour
     {
         /*enSuelo indicamos que mientras la caja toque algo, que sea suelo*/
         enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionesCaja, 0f, queEsSuelo);
+        
+        animator.SetBool("enSuelo",enSuelo);
+        
         Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
         //para que no siempre se mande la señal de saltar
         salto = false;
