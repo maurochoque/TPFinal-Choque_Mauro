@@ -7,29 +7,44 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject enemyPrefab;
     public float spawnInterval = 2.0f;
-    public int maxEnemies = 10;
+    //public int maxEnemies = 10;
 
-    private int currentEnemies = 0;
+    //private int currentEnemies = 0;
 
 
     private void Start()
     {
-        InvokeRepeating("SpawnEnemy", 0f, spawnInterval);
+        //InvokeRepeating("SpawnEnemy", 0f, spawnInterval);
+        StartCoroutine(SpawnEnemysCoroutine());
+
+    }
+
+    private IEnumerator SpawnEnemysCoroutine()
+    {
+        while (true/*currentEnemies < maxEnemies*/)
+        {
+            SpawnEnemy();
+            yield return new WaitForSeconds(spawnInterval);
+            
+            
+        }
     }
 
     private void SpawnEnemy()
     {
-        if (currentEnemies < maxEnemies)
-        {
+        //if (currentEnemies < maxEnemies)
+        //{
             GameObject newEnemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-            currentEnemies++;
+            //currentEnemies++;
 
             /*Instantiate(enemyPrefab, transform.position, Quaternion.identity);
             currentEnemies++;*/
-            // Destruye el nuevo enemigo después de un tiempo específico (por ejemplo, 5 segundos).
-            Destroy(newEnemy, 18.0f);
+            //destruye el nuevo enemigo despues de un tiempo específico
+            Destroy(newEnemy, 16.0f);
 
-        }
+
+
+        //}
         
     }
     

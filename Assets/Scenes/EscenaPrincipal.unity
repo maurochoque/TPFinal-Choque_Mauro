@@ -139,9 +139,10 @@ GameObject:
   - component: {fileID: 25148665}
   - component: {fileID: 25148666}
   - component: {fileID: 25148668}
+  - component: {fileID: 25148669}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Untagged
+  m_TagString: Jugador1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,6 +343,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdb18742305ce8d478162f4e392b13e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &25148669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25148657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11e6a54197d9947a9a01e2e4647588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &57561332
@@ -2796,6 +2809,7 @@ GameObject:
   - component: {fileID: 812218427}
   - component: {fileID: 812218429}
   - component: {fileID: 812218430}
+  - component: {fileID: 812218431}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Circle
@@ -2932,6 +2946,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &812218431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812218426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c07bdc3a62f5c049a1113c03097ab84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &975768662
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,7 +5133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3605195084667082281, guid: 7c9eb0ba226866d48963f50236052afb, type: 3}
   spawnInterval: 2
-  maxEnemies: 10
 --- !u!1 &1872638266
 GameObject:
   m_ObjectHideFlags: 0
