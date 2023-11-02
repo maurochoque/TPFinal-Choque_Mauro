@@ -15,12 +15,5 @@ public class EnemyCollision : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Maneja colisiones físicas de los enemigos
-        if (collision.gameObject.CompareTag("Jugador1"))
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }

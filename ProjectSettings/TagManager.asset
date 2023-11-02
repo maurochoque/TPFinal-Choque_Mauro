@@ -7,6 +7,10 @@ TagManager:
   - Circle
   - Enemy
   - Jugador1
+  - ObstaculosPuas
+  - Player1
+  - Enemy2
+  - Premio
   layers:
   - Default
   - TransparentFX

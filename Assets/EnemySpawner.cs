@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject enemyPrefab;
     public float spawnInterval = 2.0f;
+    public float destroyTime = 16.0f;
     //public int maxEnemies = 10;
 
     //private int currentEnemies = 0;
@@ -40,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
             /*Instantiate(enemyPrefab, transform.position, Quaternion.identity);
             currentEnemies++;*/
             //destruye el nuevo enemigo despues de un tiempo específico
-            Destroy(newEnemy, 16.0f);
+            Destroy(newEnemy, destroyTime);
 
 
 

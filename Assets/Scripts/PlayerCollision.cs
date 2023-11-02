@@ -26,15 +26,16 @@ public class PlayerCollision : MonoBehaviour
     //AGREGAR COLISIONES CON OTROS ENEMIGOS, INTERFAZ DE INICIO, PANTALLA DE PERDER/GANAR, SISTEMA DE RECOLECCION
     
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        // Maneja colisiones basadas en desencadenadores de los enemigos
-        if (other.CompareTag("Circle"))
+    private void OnTriggerEnter2D(Collider2D other) {
+         // Maneja colisiones basadas en desencadenadores de los enemigos
+        if (other.CompareTag("Enemy2"))
         {
-            Debug.Log("choqque");
+            
+            Destroy(gameObject);
             // El enemigo ha colisionado con un proyectil
             // Puedes realizar acciones relacionadas con el proyectil
         }
-    }*/
+        
+    }
     
 }
