@@ -12,23 +12,18 @@ public class PlayerCollision : MonoBehaviour
     if (collision.gameObject.CompareTag("Enemy"))
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(nextSceneName);//
-        Debug.Log("Colisión física con un objeto etiquetado como 'Circle'");
-        // Realiza las acciones necesarias.
+        SceneManager.LoadScene(nextSceneName);
+        
+
     }
     if (collision.gameObject.CompareTag("ObstaculosPuas"))
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(nextSceneName);//
-        Debug.Log("Colisión física con un objeto etiquetado como 'Circle'");
-        
-        // Realiza las acciones necesarias.
+        SceneManager.LoadScene(nextSceneName);
+
     }
     
 }
-
-    //AGREGAR COLISIONES CON OTROS ENEMIGOS, INTERFAZ DE INICIO, PANTALLA DE PERDER/GANAR, SISTEMA DE RECOLECCION
-    
 
     private void OnTriggerEnter2D(Collider2D other) {
          // Maneja colisiones basadas en desencadenadores de los enemigos
@@ -36,6 +31,16 @@ public class PlayerCollision : MonoBehaviour
         {
             
             Destroy(gameObject);
+            SceneManager.LoadScene(nextSceneName);//
+            // El enemigo ha colisionado con un proyectil
+            // Puedes realizar acciones relacionadas con el proyectil
+        }
+
+        if (other.CompareTag("Enemy3"))
+        {
+            
+            Destroy(gameObject);
+            SceneManager.LoadScene(nextSceneName);//
             // El enemigo ha colisionado con un proyectil
             // Puedes realizar acciones relacionadas con el proyectil
         }

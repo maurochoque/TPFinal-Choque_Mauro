@@ -11,6 +11,7 @@ TagManager:
   - Player1
   - Enemy2
   - Premio
+  - Enemy3
   layers:
   - Default
   - TransparentFX
