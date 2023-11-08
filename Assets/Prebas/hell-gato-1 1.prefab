@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &9060990851026596902
+--- !u!1001 &8852948899713343722
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6719107823001600486, guid: fda717972b09db64c843aa204e8f6d34, type: 3}
       propertyPath: m_Name
-      value: hell-gato-1
+      value: hell-gato-1 1
       objectReference: {fileID: 0}
     - target: {fileID: 6923821956286764637, guid: fda717972b09db64c843aa204e8f6d34, type: 3}
       propertyPath: m_LocalPosition.x

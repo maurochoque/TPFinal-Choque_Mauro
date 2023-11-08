@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd11e6a54197d9947a9a01e2e4647588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Perdiste
+  sceneLose: Perdiste
 --- !u!114 &25148670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9198,7 +9198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315f71e1222b19447b40746f20cecea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3605195084667082281, guid: 7c9eb0ba226866d48963f50236052afb, type: 3}
+  enemyPrefab: {fileID: 2341884849126520256, guid: 7c9eb0ba226866d48963f50236052afb, type: 3}
   spawnInterval: 4
   destroyTime: 10
 --- !u!4 &1647289599
@@ -9454,7 +9454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315f71e1222b19447b40746f20cecea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3605195084667082281, guid: 7c9eb0ba226866d48963f50236052afb, type: 3}
+  enemyPrefab: {fileID: 2341884849126520256, guid: 7c9eb0ba226866d48963f50236052afb, type: 3}
   spawnInterval: 2
   destroyTime: 14
 --- !u!1 &1872638266

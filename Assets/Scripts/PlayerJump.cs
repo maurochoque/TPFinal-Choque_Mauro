@@ -26,6 +26,6 @@ public class PlayerJump : MonoBehaviour
     }
     public void Jump(){
         rb.AddForce(Vector2.up * jumpForce);
-        //rb.velocity=new Vector2(rb.velocity.x, jumpForce*Time.deltaTime);
+        
     }
 }

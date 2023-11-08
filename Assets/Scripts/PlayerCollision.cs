@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;//
 public class PlayerCollision : MonoBehaviour
 {
   
-    public string nextSceneName = "Perdiste";//
+    public string sceneLose = "Perdiste";//
 
     //Funcion para colision con elementos fisicos  
     private void OnCollisionEnter2D(Collision2D collision)
 {
-    // Maneja colisiones físicas segun Tag (etiqueta) del GameObject
+    // Maneja colisiones físicas segun Tag(etiqueta) del GameObject
     if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("ObstaculosPuas") )
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene(sceneLose);
     }
     
 }
@@ -25,7 +25,7 @@ public class PlayerCollision : MonoBehaviour
         {
             
             Destroy(gameObject);
-            SceneManager.LoadScene(nextSceneName);//
+            SceneManager.LoadScene(sceneLose);//
            
         } 
     }
